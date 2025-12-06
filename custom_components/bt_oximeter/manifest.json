@@ -13,6 +13,7 @@
   "dependencies": ["bluetooth"],
   "documentation": "https://github.com/Boerni89/ha_bt_oximeter",
   "iot_class": "local_push",
+  "issue_tracker": "https://github.com/Boerni89/ha_bt_oximeter/issues",
   "loggers": ["custom_components.bt_oximeter"],
   "requirements": ["bleak-retry-connector>=3.5.0"],
   "version": "0.1.0"
