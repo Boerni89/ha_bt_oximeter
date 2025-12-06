@@ -1,0 +1,19 @@
+{
+  "domain": "bt_oximeter",
+  "name": "Bluetooth Oximeter",
+  "version": "0.1.0",
+  "documentation": "https://github.com/Boerni89/ha_bt_oximeter",
+  "requirements": ["bleak-retry-connector>=3.5.0"],
+  "loggers": ["custom_components.bt_oximeter"],
+  "dependencies": ["bluetooth"],
+  "codeowners": ["@Boerni89"],
+  "iot_class": "local_push",
+  "bluetooth": [
+    {
+      "local_name": "OXIMETER*",
+      "service_uuid": "0000ffe0-0000-1000-8000-00805f9b34fb",
+      "connectable": true
+    }
+  ],
+  "config_flow": true
+}

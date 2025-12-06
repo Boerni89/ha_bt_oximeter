@@ -1,0 +1,45 @@
+{
+    "config": {
+        "error": {
+            "invalid_mac_address": "Invalid MAC address. Please use the format: XX:XX:XX:XX:XX:XX"
+        },
+        "step": {
+            "bluetooth_confirm": {
+                "data": {
+                    "address": "Bluetooth address (MAC)",
+                    "model": "Device model",
+                    "name": "Name"
+                },
+                "description": "Device found: {name} ({address})\n\nPlease verify the name and address.",
+                "title": "Oximeter found"
+            },
+            "user": {
+                "data": {
+                    "address": "Bluetooth address (MAC)",
+                    "model": "Device model",
+                    "name": "Name"
+                },
+                "description": "Enter the name and Bluetooth address of the oximeter.",
+                "title": "Oximeter setup"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "finger": {
+                "name": "Finger"
+            }
+        },
+        "sensor": {
+            "perfusion_index": {
+                "name": "Perfusion index"
+            },
+            "pulse_rate": {
+                "name": "Pulse rate"
+            },
+            "spo2": {
+                "name": "SpO\u2082"
+            }
+        }
+    }
+}

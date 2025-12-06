@@ -1,0 +1,7 @@
+{
+  "name": "Bluetooth Oximeter",
+  "render_readme": true,
+  "domains": ["binary_sensor", "sensor"],
+  "iot_class": "Local Push",
+  "homeassistant": "2024.6.0"
+}
