@@ -5,12 +5,16 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.components import bluetooth
 from homeassistant.exceptions import ConfigEntryNotReady
+from homeassistant.helpers import config_validation as cv
 
 from .const import DOMAIN, PLATFORMS, CONF_MODEL
 from .coordinator import OximeterBluetoothCoordinator
 from .devices import SUPPORTED_DEVICES
 
 _LOGGER = logging.getLogger(__name__)
+
+# Integration can only be set up via config entry (UI)
+CONFIG_SCHEMA = cv.config_entry_only_config_schema(DOMAIN)
 
 
 async def async_setup(hass: HomeAssistant, config: dict) -> bool:
